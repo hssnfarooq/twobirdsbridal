@@ -374,4 +374,16 @@
     font-size: 2.2rem;
     padding-bottom: 1.5rem;
   }
+
+  .accordion button[aria-expanded='true'] + .accordion-content {
+    max-height: 45rem;
+  }
+
+  .accordion button .accordion-title {
+    font-size: 1.6rem;
+  }
+
+  .accordion .accordion-content p {
+    font-size: 1.6rem;
+  }
 }
