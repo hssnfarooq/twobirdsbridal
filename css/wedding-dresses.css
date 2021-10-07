@@ -1,0 +1,389 @@
+/* Wedding Dresses Section */
+
+.wedding-dress-cover {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.wedding-dress-cover-image {
+  text-align: center;
+}
+
+.wedding-dress-cover-image img {
+  display: inline-block;
+  width: 85rem;
+  border-radius: 0.2rem;
+  margin: 0 auto;
+}
+
+.wedding-dress-cover .cover-image-text {
+  width: 85rem;
+  max-width: 100%;
+  border: 1.5px solid #eee;
+  margin: 0.5rem auto;
+  padding: 1.5rem;
+}
+
+.wedding-dress-cover .cover-image-text P {
+  font-size: 1.8rem;
+  color: #02060b;
+  text-align: justify;
+}
+
+.wedding-dress-cover .wedding-dress-cover-heading h2 {
+  font-family: 'Bitter', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 1.5rem 0rem;
+}
+
+.wedding-dress-cover .wedding-dress-cover-heading .heading-line {
+  height: 0.65rem;
+  width: 25rem;
+  margin: 0 auto;
+  border-radius: 0.65rem;
+  background-color: #f77da5;
+  margin-bottom: 3.5rem;
+}
+
+/* Dress-Grid-Section  */
+
+.dress-card-section {
+  margin: 2.5rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.dress-card-section .card {
+  width: 42rem;
+  height: 61rem;
+  border: 2px solid #eee;
+  margin: 2.5rem auto;
+}
+
+.dress-card-section .card .card-media {
+  text-align: center;
+}
+
+.dress-card-section .card .card-media img {
+  width: 41.65rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+  height: 55rem;
+}
+
+.dress-card-section .card h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+/* Brand-Description  */
+
+.brand-description .brand-description-heading h2 {
+  font-family: 'Bitter', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 1.5rem 0rem;
+}
+
+.brand-description .brand-description-heading .heading-line {
+  height: 0.65rem;
+  width: 25rem;
+  margin: 0 auto;
+  border-radius: 0.65rem;
+  background-color: #f77da5;
+  margin-bottom: 3.5rem;
+}
+
+.brand-description .brand-description-content {
+  padding: 0 2rem;
+  width: 85rem;
+  margin: 0 auto;
+}
+
+.brand-description .brand-description-content > p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.55;
+  padding-bottom: 2.5rem;
+  text-align: justify;
+}
+
+.brand-description .brand-description-content p strong {
+  font-size: 1.8rem;
+  font-family: 'Bitter', sans-serif;
+  font-weight: 700;
+}
+
+.brand-description .brand-description-content .address-description h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+
+.brand-description .brand-description-content .address-description p span {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.brand-description .brand-description-content .address-description p a {
+  color: #02060b;
+}
+
+.brand-description .brand-description-content .address-description p a:hover {
+  color: #f77da5;
+}
+
+.brand-description .brand-description-content .address-description p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.55;
+  padding-bottom: 1.5rem;
+}
+
+/* FAQ-Section */
+
+.faq-section {
+  margin-top: 2.5rem;
+}
+
+.faq-section .faq-section-heading h2 {
+  font-family: 'Bitter', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 1.5rem 0rem;
+}
+
+.faq-section .faq-section-heading .heading-line {
+  height: 0.65rem;
+  width: 25rem;
+  margin: 0 auto;
+  border-radius: 0.65rem;
+  background-color: #f77da5;
+  margin-bottom: 3.5rem;
+}
+
+.accordion .accordion-item {
+  padding: 0 2rem;
+  border-bottom: 1.5px solid #e5e5e5;
+  padding-bottom: 1.5rem;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1.5px solid #f77da5;
+  padding-bottom: 1.5rem;
+}
+.accordion button {
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1.5rem 0 0rem;
+  color: #02060b;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #f77da5;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #f77da5;
+  border: 1.5px solid#f77da5;
+}
+.accordion button .accordion-title {
+  padding: 1.5rem 0rem 1.15rem 0;
+  margin-right: 1.5rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 16px;
+  right: 0px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: #f77da5;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 15rem;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.5rem 0rem 0.5rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 896px) {
+  .dress-card-section .card {
+    width: 35rem;
+    height: 55rem;
+  }
+
+  .dress-card-section .card .card-media img {
+    width: 34.65rem;
+    height: 49rem;
+  }
+}
+
+@media (max-width: 855px) {
+  .wedding-dress-cover {
+    padding: 0 2rem;
+  }
+
+  .wedding-dress-cover-image img {
+    width: 100%;
+  }
+
+  .wedding-dress-cover .cover-image-text {
+    width: 100%;
+  }
+
+  .brand-description .brand-description-content {
+    padding: 0 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 756px) {
+  .dress-card-section .card .card-media img {
+    width: 41.65rem;
+    height: 55rem;
+  }
+
+  .dress-card-section .card {
+    width: 42rem;
+    height: 61rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wedding-dress-cover .wedding-dress-cover-heading h2 {
+    font-size: 3rem;
+  }
+
+  .brand-description .brand-description-heading h2 {
+    font-size: 3rem;
+  }
+
+  .faq-section .faq-section-heading h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .wedding-dress-cover .wedding-dress-cover-heading h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  .brand-description .brand-description-heading h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  .faq-section .faq-section-heading h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  .faq-section .faq-section-heading .heading-line {
+    width: 15rem;
+  }
+
+  .brand-description .brand-description-heading .heading-line {
+    width: 15rem;
+  }
+
+  .wedding-dress-cover .wedding-dress-cover-heading .heading-line {
+    width: 15rem;
+  }
+
+  .dress-card-section .card {
+    width: 100%;
+    height: 55rem;
+    margin: 1.5rem auto;
+  }
+
+  .dress-card-section .card .card-media img {
+    width: 100%;
+    height: 49rem;
+  }
+
+  .brand-description .brand-description-content .address-description h2 {
+    font-size: 2.2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .brand-description .brand-description-content .address-description p {
+    font-size: 1.6rem;
+  }
+
+  .accordion button .accordion-title {
+    padding: 1.5rem 0rem 1.15rem 0;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+}
