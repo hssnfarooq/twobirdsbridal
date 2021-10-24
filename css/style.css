@@ -18,8 +18,8 @@ body {
   font-weight: 400;
   background-color: #fafafa;
   color: #02060b;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -731,8 +731,9 @@ ul {
   display: inline-block;
   height: 45px;
   width: 45px;
+  border: 2px solid #eee;
   text-align: center;
-  background: #fafafa;
+  background: #f1f1f1;
   border-radius: 3px;
   cursor: pointer;
   transition: left 0.4s ease;
@@ -740,11 +741,12 @@ ul {
 .btn.click {
   left: 300px;
 }
-.btn span {
+.btn i {
   color: #02060b;
   font-size: 28px;
-  line-height: 45px;
+  line-height: 42px;
 }
+
 .btn.click span:before {
   content: '\f00d';
 }

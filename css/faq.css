@@ -1,0 +1,111 @@
+.faq-page .faq-page-heading h2 {
+  font-family: 'Bitter', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 1.5rem 0rem;
+}
+
+.faq-page .faq-page-heading .heading-line {
+  height: 0.65rem;
+  width: 25rem;
+  margin: 0 auto;
+  border-radius: 0.65rem;
+  background-color: #f77da5;
+  margin-bottom: 3.5rem;
+}
+
+.bride-faq {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* FAQ-Page-Section */
+ul.accordion-list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+  background-color: #f9f9fa;
+}
+ul.accordion-list li {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto 15px auto;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ul.accordion-list li.active h3:after {
+  transform: rotate(45deg);
+}
+ul.accordion-list li h3 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 0;
+  margin: 0;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+ul.accordion-list li h3:after {
+  content: '\f067';
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #f77da5;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+ul.accordion-list li div.answer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+ul.accordion-list li div.answer p {
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  display: block;
+  font-weight: 400;
+  padding: 10px 0 0 0;
+  cursor: pointer;
+  line-height: 150%;
+  margin: 0 0 15px 0;
+  font-size: 17px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .bride-faq {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 0.8rem;
+  }
+
+  ul.accordion-list li h3 {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+}
