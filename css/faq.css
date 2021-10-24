@@ -50,7 +50,7 @@ ul.accordion-list li {
   border-radius: 5px;
   cursor: pointer;
 }
-ul.accordion-list li.active h3:after {
+ul.accordion-list li.active span i {
   transform: rotate(45deg);
 }
 ul.accordion-list li h3 {
@@ -64,17 +64,19 @@ ul.accordion-list li h3 {
   margin: 0;
   font-size: 1.8rem;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-ul.accordion-list li h3:after {
-  content: '\f067';
-  font-family: 'Font Awesome 5 Free';
-  position: absolute;
-  right: 0;
-  top: 0;
+
+ul.accordion-list li h3 span i {
+  display: inline-block;
+  margin-left: 0.2rem;
   color: #f77da5;
   transition: all 0.3s ease-in-out;
   font-size: 18px;
 }
+
 ul.accordion-list li div.answer {
   position: relative;
   display: block;
