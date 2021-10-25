@@ -22,9 +22,10 @@
   font-size: 2.4rem;
   line-height: 3rem;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
-  padding: 1.5rem;
+  padding: 0 2rem;
+  padding-bottom: 1.5rem;
 }
 
 /* FAQ-Page-Section */
@@ -60,7 +61,6 @@ ul.accordion-list li h3 {
   display: block;
   width: 100%;
   height: auto;
-  padding: 0 0 0 0;
   margin: 0;
   font-size: 1.8rem;
   cursor: pointer;

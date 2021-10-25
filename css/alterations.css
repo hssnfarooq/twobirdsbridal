@@ -1,0 +1,18 @@
+.alteration .alteration-heading h2 {
+  font-family: 'Bitter', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 1.5rem 0rem;
+}
+
+.alteration .alteration-heading .heading-line {
+  height: 0.65rem;
+  width: 25rem;
+  margin: 0 auto;
+  border-radius: 0.65rem;
+  background-color: #f77da5;
+  margin-bottom: 3.5rem;
+}

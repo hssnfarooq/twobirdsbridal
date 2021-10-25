@@ -19,13 +19,13 @@
 .wedding-dress-cover .cover-image-text {
   width: 85rem;
   max-width: 100%;
-  border: 1.5px solid #eee;
   margin: 0.5rem auto;
   padding: 1.5rem;
 }
 
 .wedding-dress-cover .cover-image-text P {
   font-size: 1.8rem;
+  line-height: 1.8rem;
   color: #02060b;
   text-align: justify;
 }

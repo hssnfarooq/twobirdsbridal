@@ -48,6 +48,9 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 0.5rem;
 }
 
 .header .main-header .main-header-item a img {
@@ -84,12 +87,13 @@ ul {
 }
 
 .header .main-header .main-header-item form .form-control input {
-  width: 32rem;
-  padding: 0.75rem 5rem 0.75rem 0.75rem;
+  width: 40rem;
+  padding: 0.8rem;
   border-top: none;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1.5px solid #02060b;
+  border: 1.5px solid #999;
+  border-radius: 1.2rem;
   outline: none;
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
@@ -98,8 +102,8 @@ ul {
 
 .header .main-header .main-header-item form .form-control .search-icon {
   position: absolute;
-  top: 0.75rem;
-  right: 1.2rem;
+  top: 1rem;
+  right: 0.8rem;
 }
 
 .header .main-header .main-header-item form .form-control .search-icon i {
@@ -128,6 +132,10 @@ ul {
 .header .main-nav ul li {
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+.header .main-nav .active {
+  color: #f77da5;
 }
 
 .header .main-nav ul li a {
@@ -741,7 +749,7 @@ ul {
 .btn.click {
   left: 300px;
 }
-.btn i {
+.btn span {
   color: #02060b;
   font-size: 28px;
   line-height: 42px;
@@ -752,7 +760,7 @@ ul {
 }
 .sidebar {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   left: -100vw;
   background: #fafafa;
@@ -760,6 +768,7 @@ ul {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   transition: left 0.4s ease;
   z-index: 1;
+  margin-top: 1.5rem;
 }
 .sidebar.show {
   left: 0px;
@@ -773,24 +782,25 @@ ul {
 .sidebar ul li {
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 0.85rem 0rem;
-  text-align: center;
+  padding: 0.85rem 2rem;
+  text-align: left;
   border-bottom: 2px solid #eee;
+  cursor: pointer;
+  transition: 300ms;
+  border-radius: 1.2rem;
 }
 
 .sidebar ul li a {
   color: #02060b;
 }
 
-.sidebar ul li a:hover {
-  color: #f77da5;
+.sidebar ul li:hover {
+  background-color: #f77da5;
+  border-radius: 1.2rem;
 }
 
-.sidebar form {
-  position: absolute;
-  bottom: 5rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.sidebar ul li:hover a {
+  color: #fff;
 }
 
 .sidebar form .form-control {
@@ -799,27 +809,28 @@ ul {
 }
 
 .sidebar form .form-control input {
-  width: 28rem;
-  padding: 0.75rem 5rem 0.75rem 0.75rem;
+  width: 100%;
   border-top: none;
   border-left: 0;
   border-right: 0;
-  border-bottom: 1.5px solid #02060b;
+  border: 2px solid #eee;
   outline: none;
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
 }
 
 .sidebar form .form-control .search-icon {
   position: absolute;
-  top: 0.75rem;
-  right: 1.2rem;
+  top: 1.8rem;
+  right: 1.5rem;
 }
 
 .sidebar form .form-control .search-icon i {
   font-size: 2rem;
-  color: #02060b;
+  color: #999;
   margin-left: 0.5rem;
 }
 
@@ -1000,10 +1011,10 @@ ul {
 
 @media (max-width: 470px) {
   .hero-slider {
-    height: 18rem;
+    height: 18.5rem;
   }
 
   .hero-slider .navigation {
-    height: 18rem;
+    height: 20rem;
   }
 }
