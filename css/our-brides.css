@@ -1,0 +1,96 @@
+.brides-page .brides-page-heading h2 {
+  font-family: 'Bitter', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 1.5rem 0rem;
+  margin-top: 2.5rem;
+}
+
+.brides-page .brides-page-heading .heading-line {
+  height: 0.65rem;
+  width: 25rem;
+  margin: 0 auto;
+  border-radius: 0.65rem;
+  background-color: #f77da5;
+  margin-bottom: 3.5rem;
+}
+
+/* Gallery */
+
+.gallery {
+  display: flex;
+  padding: 8px;
+  transition: 0.3s;
+}
+.gallery:hover .gallery-image {
+  filter: grayscale(1);
+}
+.gallery-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+}
+.gallery-link {
+  margin: 2px;
+  overflow: hidden;
+}
+.gallery-link:hover .gallery-image {
+  filter: grayscale(0);
+}
+
+.gallery-thumb {
+  position: relative;
+}
+.gallery-image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.gallery-thumb img {
+  border-radius: 0.5rem;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.8rem;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f77da5;
+  text-align: center;
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.9)
+  );
+  transition: 0.3s;
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-column {
+    flex-wrap: wrap;
+    width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-column {
+    width: 95%;
+  }
+}
