@@ -1,3 +1,7 @@
+.alteration {
+  margin-top: 2.5rem;
+}
+
 .alteration .alteration-heading h2 {
   font-family: 'Bitter', serif;
   font-size: 3.5rem;
@@ -15,4 +19,198 @@
   border-radius: 0.65rem;
   background-color: #f77da5;
   margin-bottom: 3.5rem;
+}
+
+/* Form */
+
+.altertion-form {
+  width: 75rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin: 0 auto;
+  padding: 3.5rem;
+  border-radius: 0.5rem;
+}
+
+.altertion-form h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.5rem;
+  color: #f77da5;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  padding-bottom: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.altertion-form .form-control {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.down-icon {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 0.9rem;
+}
+
+.down-icon-special {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 0.9rem;
+}
+
+.altertion-form .form-control span {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.altertion-form .form-control label {
+  display: block;
+  font-size: 1.8rem;
+  color: #02060b;
+  font-weight: 600;
+  padding-bottom: 0.65rem;
+}
+
+.altertion-form .input-flex {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.altertion-form input,
+.altertion-form select {
+  width: 100%;
+  padding: 1rem 0.8rem;
+  border: 2px solid #eee;
+  border-radius: 0.5rem;
+  outline-color: #f77da5;
+  font-size: 1.6rem;
+  color: rgb(80, 80, 80);
+}
+
+.altertion-form select {
+  appearance: none;
+}
+
+.altertion-form input::placeholder {
+  color: rgb(80, 80, 80);
+  font-size: 1.6rem;
+}
+
+.altertion-form .fname,
+.altertion-form .lname {
+  width: 50%;
+}
+
+.altertion-form .hour,
+.altertion-form .min,
+.altertion-form .what-time {
+  width: 10rem;
+  position: relative;
+}
+
+.altertion-form .form-control .submit-btn {
+  display: block;
+  text-align: center;
+  width: 20rem;
+  margin: 0 auto;
+  background-color: #f77da5;
+  color: #fff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.form-control.btn-ctrl {
+  margin-bottom: 0;
+}
+
+/* Date Input */
+.alteration-faq {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.alteration-faq .card {
+  width: 60rem;
+  height: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+}
+
+.alteration-faq .card h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.5rem;
+  color: #02060b;
+  border-bottom: 2px solid #ddd;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.005em;
+}
+
+.alteration-faq .card p {
+  padding-top: 2rem;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+}
+
+@media (max-width: 1260px) {
+  .alteration-faq .card {
+    width: 48rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .alteration-faq .card {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .altertion-form {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .altertion-form .input-flex {
+    flex-wrap: wrap;
+  }
+
+  .altertion-form .fname,
+  .altertion-form .lname {
+    width: 100%;
+  }
+
+  .altertion-form .hour,
+  .altertion-form .min,
+  .altertion-form .what-time {
+    width: 7rem;
+    position: relative;
+  }
+
+  .altertion-form .form-control {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  .altertion-form .input-flex {
+    gap: 1.5rem;
+  }
 }

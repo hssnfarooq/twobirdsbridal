@@ -24,6 +24,10 @@ body {
   overflow-y: auto;
 }
 
+.hide-scroll {
+  overflow-y: hidden;
+}
+
 .container {
   max-width: 150rem;
   margin: 0 auto;
@@ -915,6 +919,7 @@ ul {
 
   .mobile-menu {
     display: block;
+    background-color: #fff;
   }
 }
 

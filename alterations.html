@@ -125,12 +125,12 @@
     <!-- Alteration-Page-Form -->
     <div class="container">
       <form action="" class="altertion-form">
-        <h2>Book Now</h2>
+        <h3>Book Now</h3>
         <div class="form-control">
           <label for="date">Date</label>
-          <input type="date" name="date" id="date" />
+          <input type="date" class="date" name="date" id="date" />
         </div>
-        <div class="form-control">
+        <div class="form-control input-flex">
           <div class="fname">
             <label for="fname">First Name</label>
             <input type="text" name="fname" id="fname" />
@@ -150,17 +150,23 @@
         </div>
         <div class="form-control">
           <label for="time">Time</label>
-          <div class="hour">
-            <input type="text" name="hour" id="hour" />
-          </div>
-          <div class="min">
-            <input type="text" name="min" id="min" />
-          </div>
-          <div class="what-time">
-            <select name="time-country" id="time-country">
-              <option value="am">AM</option>
-              <option value="pm">PM</option>
-            </select>
+          <div class="input-flex">
+            <div class="hour">
+              <input type="text" name="hour" id="hour" placeholder="HH" />
+            </div>
+            <span>:</span>
+            <div class="min">
+              <input type="text" name="min" id="min" placeholder="MM" />
+            </div>
+            <div class="what-time">
+              <select name="time-country" id="time-country">
+                <option value="am">AM</option>
+                <option value="pm">PM</option>
+              </select>
+              <div class="down-icon-special">
+                <i class="fas fa-sort-down"></i>
+              </div>
+            </div>
           </div>
         </div>
         <div class="form-control">
@@ -173,12 +179,125 @@
               Wedding Dress Dry Cleaning
             </option>
           </select>
+          <div class="down-icon">
+            <i class="fas fa-sort-down"></i>
+          </div>
         </div>
 
-        <div class="form-control">
+        <div class="form-control btn-ctrl">
           <input type="submit" value="Submit" class="submit-btn" />
         </div>
       </form>
+    </div>
+
+    <!-- Alterations-Questions-Section -->
+
+    <section class="alteration">
+      <div class="alteration-heading">
+        <h2>Our Services</h2>
+        <div class="heading-line"></div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="alteration-faq">
+        <div class="card">
+          <h3>
+            Taking Fitting & Elegance of Your Wedding Dress To The Next Level
+          </h3>
+          <p>
+            Looking great in your wedding dress has never been easier. Thanks to
+            TwoBirds’ Bridal Alterations, you can look extremely beautiful in
+            your wedding dress. With over 30 years of experience in wedding
+            dress alterations, tailoring, and customizing services – we’re one
+            of the most experienced in Sydney. With our experience and
+            expertise, we make your dress look perfect on you.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>No Bride Is A Standard Size</h3>
+          <p>
+            We understand that not every bride is a standard size. Ready-to-wear
+            dresses for brides are designed and stitched according to the
+            standardized sizes. However, not every bride fits the mold. To make
+            a dress look just the right dress for you, we understand the shape
+            of your body and alter the dress accordingly. TwoBirds Bridal
+            Alterations services make your dress perfectly fit & give it a great
+            tailored look.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Our Wedding Dress Alterations Offer</h3>
+          <p>
+            Our Bridal Alterations offer a full range of tailoring services for
+            wedding dresses. Regardless of whether you need a simple alteration
+            or full garment creation, we have everything needed for a perfect
+            solution. Brides from across Sydney hire us for an unparalleled
+            experience, friendly professionals, and high-end expertise. TwoBirds
+            Bridal ensures that you, like every past client, look elegant &
+            incredible on her special day. Handling both simple and complex
+            wedding dress alterations is our key expertise.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Hem</h3>
+          <p>
+            Your wedding dress should make you stand out and look incredible on
+            your dream day. If your wedding dress isn’t perfectly fit, you need
+            its hem to be adjusted. Regardless of the type of dress, we hem
+            expertly and make them perfectly fit for you. It doesn’t matter if
+            it’s a simple sheath dress, gown, or an elegantly beaded dress, we
+            have a skillful & experienced team to produce perfect results.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Fit</h3>
+          <p>
+            No matter how expensive or beaded is your wedding dress, if it’s not
+            fit, you won’t look good. TwoBirds Bridal Alterations focuses hugely
+            on giving your dress the most flattered & comfortable fit. Making
+            your dress comfortable, adding bra cups, giving a smoother look, and
+            let it hug your unique curves are our prime focuses.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Bustle</h3>
+          <p>
+            By adding bustle to your wedding dress, we elevate its charm,
+            elegance, and exquisiteness. Besides, we bring ease of mobility to
+            your dress. TwoBirds Bridal is an expert in creating elegantly
+            draped bustle for wedding dresses. We provide customized and unique
+            bustle according to your dress.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Embellishments</h3>
+          <p>
+            Sometimes, your wedding dress is beautiful but it has “something
+            missing.” When you bring your bridal dress to TwoBirds Bridal, rest
+            assure that your dress will get the “wow” factor it was missing.
+            Having over 30 years of experience, our experts can identify the
+            missing elements quickly. We add embellishments to your dress,
+            making it look perfect for you.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Get Your Wedding Dress Perfectly Altered!</h3>
+          <p>
+            If your wedding dress isn’t perfectly fit, then TwoBirds Bridal’s
+            Wedding Dress Alterations is the right solution. Bring your dress to
+            us and we’ll give it the perfect fit, embellishment, and the “wow”
+            factor that it’s missing.
+          </p>
+        </div>
+      </section>
     </div>
 
     <!-- Footer -->
@@ -227,16 +346,6 @@
     </footer>
 
     <!-- JS Script -->
-    <script>
-      $('.btn').click(function () {
-        $(this).toggleClass('click');
-        $('.sidebar').toggleClass('show');
-      });
-
-      document.querySelector('.btn').addEventListener('click', () => {
-        document.querySelector('#overlay').classList.toggle('active');
-      });
-    </script>
 
     <script src="./script/app.js"></script>
   </body>
