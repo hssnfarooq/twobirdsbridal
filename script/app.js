@@ -36,3 +36,46 @@ $(document).ready(function () {
     return false;
   });
 });
+
+// Product-Detail-Slider
+
+const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach(imgItem => {
+  imgItem.addEventListener('click', event => {
+    event.preventDefault();
+    imgId = imgItem.dataset.id;
+    slideImage();
+  });
+});
+
+function slideImage() {
+  const displayWidth = document.querySelector(
+    '.img-showcase img:first-child'
+  ).clientWidth;
+
+  document.querySelector('.img-showcase').style.transform = `translateX(${
+    -(imgId - 1) * (displayWidth + 5)
+  }px)`;
+}
+
+window.addEventListener('resize', slideImage);
+
+var swiper = new Swiper('.home-slider', {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

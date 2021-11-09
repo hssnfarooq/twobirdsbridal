@@ -1,0 +1,231 @@
+/* Product-Detail */
+
+.product {
+  max-width: 120rem;
+  width: 98%;
+  margin: 5rem auto;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  grid-gap: 1.5rem;
+}
+
+.card .product-imgs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+}
+.card .product-content {
+  margin-left: 2.5rem;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card .img-display {
+  overflow: hidden;
+}
+
+.card .img-showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.card .img-showcase img {
+  min-width: 100%;
+  border: 2px solid #ddd;
+}
+.img-select {
+  display: flex;
+
+  flex-direction: column;
+}
+.img-item {
+  margin: 0.2rem;
+  border: 5px solid #ddd;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3) {
+  margin-right: 0;
+}
+.img-item:hover {
+  opacity: 0.8;
+}
+
+.product-title {
+  font-family: 'Bitter', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.product-rating {
+  font-size: 2rem;
+  color: #ffc107;
+  padding-bottom: 1.5rem;
+}
+
+.product-detail p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+.product-detail ul {
+  margin-bottom: 1.5rem;
+}
+.product-detail ul li {
+  background: url('../images/checked.png') left center no-repeat;
+  background-size: 18px;
+  padding-left: 2.5rem;
+  color: #222;
+  font-weight: 600;
+}
+.product-detail ul li span {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  color: #222;
+  border: 1px solid #222;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.8rem;
+
+  transition: all 0.5s ease;
+}
+.social-links a:hover {
+  background: #f77da5;
+  border-color: transparent;
+  color: #fff;
+}
+
+/* Product-Section */
+.like-products {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.like-products .like-products-heading {
+  padding: 2.5rem 0rem;
+  margin-bottom: 2.5rem;
+}
+
+.like-products .like-products-heading h2 {
+  font-family: 'Bitter', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  top: 0rem;
+  background-color: #fafafa;
+  padding: 0 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.2rem;
+}
+
+.like-products .like-products-heading .heading-line {
+  position: relative;
+  width: 100%;
+  height: 0.12rem;
+  background-color: rgb(205, 205, 205);
+}
+
+.like-products .like-products-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.like-products .like-products-flex .like-products-item .like-card {
+  width: 32rem;
+  height: 48rem;
+  margin-top: 2.5rem;
+}
+
+.like-products
+  .like-products-flex
+  .like-products-item
+  .like-card
+  .card-image
+  img {
+  width: 32rem;
+  height: 43rem;
+}
+
+.like-products .like-products-flex .like-products-item .like-card .card-btn {
+  background-color: #222;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.like-products .like-products-flex .like-products-item .like-card .card-btn a {
+  color: #fafafa;
+}
+
+/* Media Queries */
+
+@media (max-width: 870px) {
+  .card {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2.5rem;
+  }
+
+  .product-title {
+    font-size: 3rem;
+  }
+
+  .product-content {
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 696px) {
+  .like-products .like-products-flex {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .product-title {
+    font-size: 2rem;
+  }
+
+  .card {
+    place-content: initial;
+  }
+
+  .product {
+    padding: 1.5rem;
+  }
+}
