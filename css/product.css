@@ -33,6 +33,7 @@
 
 .card .img-display {
   overflow: hidden;
+  order: 2;
 }
 
 .card .img-showcase {
@@ -51,8 +52,8 @@
   flex-direction: column;
 }
 .img-item {
-  margin: 0.2rem;
-  border: 5px solid #ddd;
+  margin: 0.35rem;
+  border: 2px solid #ddd;
 }
 .img-item:nth-child(1),
 .img-item:nth-child(2),
@@ -90,6 +91,7 @@
   background: url('../images/checked.png') left center no-repeat;
   background-size: 18px;
   padding-left: 2.5rem;
+  padding-bottom: 0.5rem;
   color: #222;
   font-weight: 600;
 }
@@ -105,7 +107,7 @@
   align-items: center;
   padding-bottom: 1.5rem;
 }
-.social-links a {
+.social-links > a {
   display: flex;
   align-items: center;
   justify-content: center;

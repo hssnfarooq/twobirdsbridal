@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome Icon Script-->
+    <script
+      src="https://kit.fontawesome.com/6255250c8f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/photo-submission.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>
+      TwoBirds Bridal - Wedding Dresses, Bride Gowns, Formal Dresses
+    </title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="container">
+        <div class="main-header">
+          <div class="main-header-item mobile-hide">
+            <a href="#"
+              ><img
+                src="./images/logo-twobirds-light.png"
+                alt="Two Birds Light"
+            /></a>
+          </div>
+          <div class="main-header-item mobile-hide">
+            <form>
+              <div class="form-control">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Type to search..."
+                />
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+              </div>
+            </form>
+          </div>
+          <div class="main-header-item mobile-hide">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="./wedding-dresses.html">Wedding Dresses</a></li>
+            <li><a href="">Our Collection</a></li>
+            <li><a href="">Our Brides</a></li>
+            <li><a href="./faq.html">FAQS</a></li>
+            <li><a href="">Trunk Shows</a></li>
+            <li><a href="./alterations.html">Alterations</a></li>
+            <li><a href="">Submit Your Photos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Hamburger -->
+    <div class="mobile-menu">
+      <div class="special">
+        <div class="btn">
+          <span class="fas fa-bars"></span>
+        </div>
+        <div>
+          <a href="#"
+            ><img src="./images/logo-twobirds-light.png" alt="Two Birds Light"
+          /></a>
+        </div>
+      </div>
+      <nav class="sidebar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="./wedding-dresses.html">Wedding Dresses</a></li>
+          <li><a href="">Our Collection</a></li>
+          <li><a href="">Our Brides</a></li>
+          <li><a href="./faq.html">FAQS</a></li>
+          <li><a href="">Trunk Shows</a></li>
+          <li><a href="./alterations.html">Alterations</a></li>
+          <li><a href="">Submit Your Photos</a></li>
+        </ul>
+        <form>
+          <div class="form-control">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Type to search..."
+            />
+            <div class="search-icon"><i class="fas fa-search"></i></div>
+          </div>
+        </form>
+      </nav>
+    </div>
+
+    <!-- Hero-Section -->
+
+    <section class="photo-sub">
+      <div class="container">
+        <div class="photo-sub-hero"></div>
+      </div>
+    </section>
+
+    <section class="photo-form-section">
+      <div class="container">
+        <div class="photoform">
+          <div class="photoform-heading">
+            <h2>Photo Submissions</h2>
+            <div class="heading-line"></div>
+          </div>
+          <div class="photoform-description">
+            <p>
+              We absolutely love receiving photos of our MWL girls; it brightens
+              our day knowing that our designs were a part of your wedding
+              celebrations!
+            </p>
+
+            <p>
+              If you have a moment, we would love for you to submit your photos.
+              Some brides’ photos will even be selected to be featured on our
+              blog and/or social media accounts.
+            </p>
+          </div>
+          <div class="photoform-how">
+            <h3>How To Submit</h3>
+            <p>
+              If this sounds like something you would like to do, please fill
+              out the form below with approximately 10 photos from your day
+              (please try and include a selection from your ceremony, reception
+              and other wedding/squad photos).
+            </p>
+          </div>
+          <form action="">
+            <div class="form-control input-flex">
+              <div class="flex-field">
+                <label for="fullname">Name</label>
+                <input type="text" name="fullname" id="fullname" />
+              </div>
+              <div class="flex-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+            </div>
+
+            <div class="form-control">
+              <label for="how-meet">How did you meet?</label>
+              <textarea name="how-meet" id="how-meet"></textarea>
+            </div>
+
+            <div class="form-control">
+              <label for="when-one">When did you know they were the one?</label>
+              <textarea name="when-one" id="when-one"></textarea>
+            </div>
+
+            <div class="form-control">
+              <label for="favourite"
+                >What are your three favourite attributes of your
+                partner?</label
+              >
+              <textarea name="favourite" id="favourite"></textarea>
+            </div>
+
+            <div class="form-control">
+              <label for="proposed">Who proposed and how?</label>
+              <textarea name="proposed" id="proposed"></textarea>
+            </div>
+
+            <div class="form-control">
+              <label for="dress-love"
+                >Where did you fall in love with your dress and why?</label
+              >
+              <textarea name="dress-love" id="dress-love"></textarea>
+            </div>
+
+            <div class="form-control">
+              <label for="best-wedding"
+                >What was the best moment for you at the wedding?</label
+              >
+              <textarea name="best-wedding" id="best-wedding"></textarea>
+            </div>
+
+            <div class="form-control">
+              <label for="favourite-detail"
+                >What were your favorite details?</label
+              >
+              <textarea
+                name="favourite-detail"
+                id="favourite-detail"
+              ></textarea>
+            </div>
+
+            <div class="form-control">
+              <label for="advice">
+                What advice would you tell other brides?</label
+              >
+              <textarea name="advice" id="advice"></textarea>
+            </div>
+
+            <div class="form-control">
+              <label for="vendor">Any standout vendors?</label>
+              <textarea name="vendor" id="vendor"></textarea>
+            </div>
+
+            <div class="form-control input-flex">
+              <div class="flex-field">
+                <label for="partnername">Your Partner's Name</label>
+                <input type="text" name="partnername" id="partnername" />
+              </div>
+              <div class="flex-field">
+                <label for="venue">Venue</label>
+                <input type="text" name="venue" id="venue" />
+              </div>
+            </div>
+
+            <div class="form-control input-flex">
+              <div class="flex-field">
+                <label for="makeupArtist">Makeup Artist</label>
+                <input type="text" name="makeupArtist" id="makeupArtist" />
+              </div>
+              <div class="flex-field">
+                <label for="flowers">Flowers</label>
+                <input type="text" name="flowers" id="flowers" />
+              </div>
+            </div>
+
+            <div class="form-control input-flex">
+              <div class="flex-field">
+                <label for="bridesMaid">Bridesmaid outfits</label>
+                <input type="text" name="bridesMaid" id="bridesMaid" />
+              </div>
+              <div class="flex-field">
+                <label for="jewelry">Rings/Jewelry</label>
+                <input type="text" name="jewelry" id="jewelry" />
+              </div>
+            </div>
+
+            <div class="form-control input-flex">
+              <div class="flex-field">
+                <label for="suits">Suits</label>
+                <input type="text" name="suits" id="suits" />
+              </div>
+              <div class="flex-field">
+                <label for="photographer">Photographer</label>
+                <input type="text" name="photographer" id="photographer" />
+              </div>
+            </div>
+
+            <div class="form-control">
+              <label for="stockist">Your MWL</label>
+              <input type="text" name="stockist" id="stockist" />
+            </div>
+
+            <div class="form-control">
+              <label for="photo-upload">Photo Upload</label>
+              <div class="image-upload-wrap">
+                <input
+                  class="file-upload-input"
+                  type="file"
+                  onchange="readURL(this);"
+                  accept="image/*"
+                />
+                <div class="drag-text">
+                  <h3>Drag and drop a file or select add Image</h3>
+                </div>
+              </div>
+              <div class="file-upload-content">
+                <img class="file-upload-image" src="#" alt="your image" />
+                <div class="image-title-wrap">
+                  <button
+                    type="button"
+                    onclick="removeUpload()"
+                    class="remove-image"
+                  >
+                    Remove <span class="image-title">Uploaded Image</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-control">
+              <input type="submit" value="Submit" class="submit-btn" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-flex">
+          <div class="footer-item">
+            <h3>Customer Care</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">FAQ's</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">Collection</a></li>
+              <li><a href="#">Wedding Dresses</a></li>
+              <li><a href="#">Alterations</a></li>
+              <li><a href="#">Our Brides</a></li>
+            </ul>
+          </div>
+          <div class="footer-item footer-social-logo">
+            <div class="footer-logo">
+              <img src="./images/logo-twobirds-light.png" alt="" />
+            </div>
+            <ul class="social-links">
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom-section">
+          <p>© 2021 Twobirds Bridal. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Script -->
+
+    <script src="./script/app.js"></script>
+  </body>
+</html>

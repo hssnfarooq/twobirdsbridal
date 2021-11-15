@@ -19,10 +19,11 @@
 
 .bride-faq {
   font-family: 'Nunito', sans-serif;
-  font-size: 2.4rem;
-  line-height: 3rem;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   font-weight: 400;
-  text-transform: capitalize;
   text-align: center;
   padding: 0 2rem;
   padding-bottom: 1.5rem;
@@ -99,13 +100,14 @@ ul.accordion-list li div.answer p {
 }
 
 /* Media Queries */
-@media (max-width: 600px) {
-  .bride-faq {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    padding: 0.8rem;
-  }
 
+@media (max-width: 768px) {
+  .bride-faq {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
   ul.accordion-list li h3 {
     font-size: 1.6rem;
     text-transform: capitalize;

@@ -1,0 +1,135 @@
+.trunk-page .trunk-page-heading h2 {
+  font-family: 'Bitter', serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  padding: 1.5rem 0rem;
+}
+
+.trunk-page .trunk-page-heading .heading-line {
+  height: 0.65rem;
+  width: 25rem;
+  margin: 0 auto;
+  border-radius: 0.65rem;
+  background-color: #f77da5;
+  margin-bottom: 3.5rem;
+}
+
+.trunk-description {
+  font-family: 'Nunito', sans-serif;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.countries-flex {
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.countries-flex .country-btn {
+  display: inline-block;
+  width: 15rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fafafa;
+  border-radius: 0.5rem;
+}
+
+.countries-flex .country-btn.active {
+  background-color: #f77da5;
+  color: #fff;
+  font-weight: 600;
+}
+
+.trunk-countries .trunk-image {
+  margin-top: 2.5rem;
+}
+
+.trunk-countries .trunk-image img {
+  width: 100%;
+}
+
+.trunk-cities .cities-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.trunk-cities .cities-flex > a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #02060b;
+}
+
+.trunk-cards {
+  margin-top: 5rem;
+}
+
+.card--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.card--show {
+  width: 35rem;
+  border: 2px solid #eee;
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.card--show > h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.card--show .card--body p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0.2rem 0rem;
+}
+
+.card--show .card--body .card--address,
+.card--show .card--body .card--mail {
+  padding-top: 1rem;
+}
+
+.card--link {
+  padding-top: 1.5rem;
+}
+
+.card--link > a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #02060b;
+}
+
+@media (max-width: 800px) {
+  .trunk-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .card--flex {
+    justify-content: center;
+  }
+}
