@@ -254,16 +254,26 @@
   }
 }
 
-@media all and (max-width: 300px) {
-  body {
-    font-size: 14px;
+@media (max-width: 725px) {
+  .services--content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-services .services-card {
+    width: 90%;
   }
 }
+
 @media all and (max-width: 500px) {
   .testim .arrow {
     font-size: 1.5rem;
   }
   .testim .cont div p {
     line-height: 25px;
+  }
+
+  .about-services .services-card {
+    width: 100%;
   }
 }
