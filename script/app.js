@@ -3,6 +3,8 @@ $('.btn').click(function () {
   $('.sidebar').toggleClass('show');
 });
 
+// Testimonial Slider
+
 var testim = document.getElementById('testim'),
   testimDots = Array.prototype.slice.call(
     document.getElementById('testim-dots').children
@@ -16,7 +18,7 @@ var testim = document.getElementById('testim'),
   currentSlide = 0,
   currentActive = 0,
   testimTimer;
-// coding with nick
+
 window.onload = function () {
   // Testim Script
   function playSlide(slide) {
@@ -44,7 +46,7 @@ window.onload = function () {
       playSlide((currentSlide += 1));
     }, testimSpeed);
   }
-  // coding with nick
+
   testimleftArrow.addEventListener('click', function () {
     playSlide((currentSlide -= 1));
   });
@@ -59,7 +61,6 @@ window.onload = function () {
   }
   playSlide(currentSlide);
 };
-// coding with nick
 
 // FAQ Section
 const items = document.querySelectorAll('.accordion button');
@@ -120,79 +121,6 @@ function slideImage() {
 }
 
 window.addEventListener('resize', slideImage);
-
-// Accordion Action
-// const filterTitle = document.querySelectorAll('.filter-heading');
-// const accordionItem = document.querySelectorAll('.accordion-item');
-// const filterItems = document.querySelector('.filters-items');
-
-// filterTitle.forEach(el =>
-//   el.addEventListener('click', () => {
-//     if (el.classList.contains('active')) {
-//       el.classList.remove('active');
-//     } else {
-//     accordionItem.forEach(el2 => el2.classList.add('active'));
-//     accordionItem.classList.add('active');
-//   })
-
-// );
-
-const filterHeading = document.querySelector('.filter-heading');
-const accordionItem = document.querySelectorAll('.accordion-item');
-
-filterHeading.addEventListener('click', () => {
-  console.log('Hello');
-  accordionItem.forEach(el => {
-    if (el.classList.contains('active')) {
-      el.classList.remove('active');
-    } else {
-      el.classList.add('active');
-    }
-  });
-});
-
-$('a.like-button').on('click', function (e) {
-  $(this).toggleClass('liked');
-
-  setTimeout(() => {
-    $(e.target).removeClass('liked');
-  }, 1000);
-});
-
-// Get the modal
-const modal = document.querySelector('#myModal');
-
-// Get the button that opens the modal
-const btn12 = document.querySelectorAll('.filter-mobile-menu');
-
-// Get the <span> element that closes the modal
-const closeModal = document.getElementsByClassName('close')[0];
-const body1 = document.querySelector('body');
-
-for (let i = 0; i < btn12.length; i++) {
-  btn12[i].addEventListener('click', function () {
-    modal.style.display = 'block';
-    body1.style.overflowY = 'hidden';
-  });
-}
-
-// When the user clicks the button, open the modal
-btn12.onclick = function () {
-  modal.style.display = 'block';
-};
-
-// When the user clicks on <span> (x), close the modal
-closeModal.onclick = function () {
-  modal.style.display = 'none';
-  body1.style.overflowY = 'auto';
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = 'none';
-  }
-};
 
 // Image Upload
 
