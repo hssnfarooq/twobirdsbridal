@@ -3,6 +3,23 @@ $('.btn').click(function () {
   $('.sidebar').toggleClass('show');
 });
 
+// FAQ Section
+const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  console.log('Hello');
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+
 // Testimonial Slider
 
 var testim = document.getElementById('testim'),
@@ -61,23 +78,6 @@ window.onload = function () {
   }
   playSlide(currentSlide);
 };
-
-// FAQ Section
-const items = document.querySelectorAll('.accordion button');
-
-function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
-  console.log('Hello');
-  for (i = 0; i < items.length; i++) {
-    items[i].setAttribute('aria-expanded', 'false');
-  }
-
-  if (itemToggle == 'false') {
-    this.setAttribute('aria-expanded', 'true');
-  }
-}
-
-items.forEach(item => item.addEventListener('click', toggleAccordion));
 
 // Faq-Page-Section
 
