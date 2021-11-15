@@ -5,7 +5,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.2rem;
-  padding: 1.5rem 0rem;
+  padding: 1.5rem 2rem;
 }
 
 .about-page .about-page-heading .heading-line {
@@ -69,7 +69,7 @@
 
 .testim {
   width: 100%;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 .testim .wrap {
   position: relative;
@@ -118,7 +118,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 1px solid #eee;
+  border: 1px solid #f77da5;
   margin: 0 10px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -245,9 +245,14 @@
     transform: scale(0);
   }
 }
-/* coding with nick */
 
-/* Responsive */
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .about-description {
+    width: 100%;
+  }
+}
 
 @media all and (max-width: 300px) {
   body {
