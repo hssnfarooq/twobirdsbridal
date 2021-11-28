@@ -22,13 +22,35 @@
 }
 
 /* Form */
+.alteration-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  padding-top: 2.5rem;
+}
+
+.alter-image {
+  width: 47%;
+}
+
+.alter-image img {
+  height: 84.5rem;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-right: 5px solid #f77da5;
+  border-bottom: 5px solid #f77da5;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 
 .altertion-form {
-  width: 75rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  margin: 0 auto;
-  padding: 3.5rem;
+  width: 47%;
+  border-left: 4px solid #f77da5;
+  border-top: 4px solid #f77da5;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 0.5rem;
 }
 
@@ -181,20 +203,22 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
+  .alteration-content {
+    display: block;
+  }
+
   .altertion-form {
-    width: 95%;
-    padding: 1.5rem;
+    width: 98%;
+  }
+
+  .alter-image {
+    display: none;
   }
 }
 
 @media (max-width: 520px) {
-  .altertion-form .input-flex {
-    flex-wrap: wrap;
-  }
-
-  .altertion-form .fname,
-  .altertion-form .lname {
+  .altertion-form {
     width: 100%;
   }
 
@@ -208,9 +232,5 @@
   .altertion-form .form-control {
     margin-bottom: 1.5rem;
     position: relative;
-  }
-
-  .altertion-form .input-flex {
-    gap: 1.5rem;
   }
 }

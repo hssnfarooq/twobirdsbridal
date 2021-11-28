@@ -1,24 +1,12 @@
-const filterHeading = document.querySelector('.filter-heading');
 const accordionItem = document.querySelectorAll('.accordion-item');
+const filterItems = document.querySelector('.filters-items');
 
-filterHeading.addEventListener('click', () => {
-  console.log('Hello');
-  accordionItem.forEach(el => {
-    if (el.classList.contains('active')) {
-      el.classList.remove('active');
-    } else {
-      el.classList.add('active');
-    }
-  });
-});
-
-$('a.like-button').on('click', function (e) {
-  $(this).toggleClass('liked');
-
-  setTimeout(() => {
-    $(e.target).removeClass('liked');
-  }, 1000);
-});
+accordionItem.forEach(el =>
+  el.addEventListener('click', () => {
+    accordionItem.forEach(el2 => el2.classList.remove('active'));
+    el.classList.add('active');
+  })
+);
 
 // Get the modal
 const modal = document.querySelector('#myModal');

@@ -91,13 +91,13 @@ ul {
 }
 
 .header .main-header .main-header-item form .form-control input {
-  width: 40rem;
-  padding: 0.8rem;
+  width: 75rem;
+  padding: 0.95rem;
   border-top: none;
   border-left: 0;
   border-right: 0;
   border: 1.5px solid #999;
-  border-radius: 1.2rem;
+  border-radius: 0.5rem;
   outline: none;
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
@@ -328,11 +328,12 @@ ul {
   width: 100%;
   min-height: 60rem;
   background-color: #fafafa;
+  opacity: 0.85;
   transform: translateY(100%) translateY(-70px) translateZ(0);
   transition: transform 0.5s ease-out;
 }
 
-.home-collection
+/* .home-collection
   .home-collection-flex
   .home-collection-item
   .card
@@ -350,7 +351,7 @@ ul {
   opacity: 0.25;
   transform: translateY(-100%) translateY(88px) translateZ(0);
   transition: transform 0.5s ease-out;
-}
+} */
 
 .home-collection .home-collection-flex .home-collection-item .card:hover .info,
 .home-collection
@@ -857,6 +858,12 @@ ul {
 
 /* Media Queries */
 
+@media (max-width: 1250px) {
+  .header .main-header .main-header-item form .form-control input {
+    width: 65rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero-slider {
     height: 40rem;
@@ -864,6 +871,29 @@ ul {
 
   .hero-slider .navigation {
     height: 40rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .header .main-nav {
+    display: none;
+  }
+
+  .header .main-header {
+    display: none;
+  }
+
+  .header .main-header .mobile-hide {
+    display: none;
+  }
+
+  .header .main-header {
+    justify-content: flex-end;
+  }
+
+  .mobile-menu {
+    display: block;
+    background-color: #fff;
   }
 }
 
@@ -893,30 +923,6 @@ ul {
 }
 
 @media (max-width: 850px) {
-  .header .main-nav {
-    display: none;
-  }
-
-  .header .main-header {
-    display: none;
-  }
-
-  .header .main-header .mobile-hide {
-    display: none;
-  }
-
-  .header .main-header {
-    justify-content: flex-end;
-  }
-
-  .hero-slider {
-    height: 32rem;
-  }
-
-  .hero-slider .navigation {
-    height: 32rem;
-  }
-
   .mobile-menu {
     display: block;
     background-color: #fff;
@@ -953,6 +959,11 @@ ul {
     height: 28rem;
   }
 
+  .footer .footer-flex {
+    justify-content: center;
+    gap: 5rem;
+  }
+
   .hero-slider .navigation {
     height: 28rem;
   }
@@ -965,11 +976,6 @@ ul {
 
   .hero-slider .navigation {
     height: 24rem;
-  }
-
-  .footer .footer-flex {
-    justify-content: center;
-    gap: 5rem;
   }
 
   .home-collection .home-collection-flex .home-collection-item .card {

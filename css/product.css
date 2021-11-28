@@ -1,7 +1,7 @@
 /* Product-Detail */
 
 .product {
-  max-width: 120rem;
+  max-width: 133.5rem;
   width: 98%;
   margin: 5rem auto;
   padding: 2rem;
@@ -48,11 +48,10 @@
 }
 .img-select {
   display: flex;
-
   flex-direction: column;
 }
 .img-item {
-  margin: 0.35rem;
+  /* margin: 0.35rem; */
   border: 2px solid #ddd;
 }
 .img-item:nth-child(1),
@@ -125,6 +124,22 @@
   background: #f77da5;
   border-color: transparent;
   color: #fff;
+}
+
+.product-bookNow-btn {
+  background-color: #282828;
+  color: #fafafa;
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.product-bookNow-btn > a {
+  color: #fafafa;
 }
 
 /* Product-Section */

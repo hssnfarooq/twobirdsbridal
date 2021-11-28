@@ -10,8 +10,13 @@
       crossorigin="anonymous"
     ></script>
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/trunk-shows.css" />
+    <link rel="stylesheet" href="./css/our-brides.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <title>
@@ -64,10 +69,10 @@
             <li><a href="">About Us</a></li>
             <li><a href="./wedding-dresses.html">Wedding Dresses</a></li>
             <li><a href="">Our Collection</a></li>
-            <li><a href="">Our Brides</a></li>
+            <li><a class="active" href="./our-brides.html">Our Brides</a></li>
             <li><a href="./faq.html">FAQS</a></li>
-            <li><a class="active" href="">Trunk Shows</a></li>
-            <li><a href="">Alterations</a></li>
+            <li><a href="">Trunk Shows</a></li>
+            <li><a href="./alterations.html">Alterations</a></li>
             <li><a href="">Submit Your Photos</a></li>
           </ul>
         </nav>
@@ -114,39 +119,47 @@
 
     <!-- Wedding-Dress-Cover -->
     <div class="container">
-      <section class="trunk-page">
-        <div class="trunk-page-heading">
-          <h2>FIND A TRUNK SHOW NEAR YOU!</h2>
+      <section class="brides-page">
+        <div class="brides-page-heading">
+          <h2>Chantel Campion Robertson</h2>
           <div class="heading-line"></div>
         </div>
-        <div class="container">
-          <div class="trunk-description">
-            Made with Love hosts trunk shows across the US, Canada, Europe and
-            the UK. If your local stockist is hosting a trunk show it means that
-            for a short period of time, they will hold extra samples of our
-            latest collection, giving you the perfect opportunity to try your
-            favourite dress!
-          </div>
-        </div>
       </section>
-      <hr />
     </div>
 
-    <section class="trunk-countries">
-      <div class="container">
-        <div class="countries-flex">
-          <a href="./aus-trunk.html" class="country-btn">Australia</a>
-          <a href="#" class="country-btn">Canada</a>
-          <a href="#" class="country-btn">New Zealand</a>
-          <a href="#" class="country-btn">United Kingdom</a>
-          <a href="#" class="country-btn">United States</a>
+    <!-- Bride-Section -->
+    <div class="container">
+      <section class="slider-description">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/bride-chris-1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/bride-chris-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/bride-chris-3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
 
-        <div class="trunk-image">
-          <img src="./images/trunk-shows.jpeg" alt="" />
+        <div class="bride-description">
+          <h3>
+            How stunning our bride Chantel looks in her custom made Twobirds
+            Bridal gown?
+          </h3>
+          <p>
+            <span>Category: </span>
+            <a href="./our-brides.html">Gallery Our Brides</a>
+          </p>
+          <p><span>Date: </span> April 30, 2018</p>
+          <p><span>Tags: </span>Celebration Music</p>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -205,5 +218,17 @@
     <!-- JS Script -->
 
     <script src="./script/app.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>
