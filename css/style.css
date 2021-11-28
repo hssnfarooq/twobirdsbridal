@@ -70,7 +70,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
 .header .main-header .main-header-item ul li i {
@@ -91,7 +91,8 @@ ul {
 }
 
 .header .main-header .main-header-item form .form-control input {
-  width: 75rem;
+  width: 80rem;
+  max-width: 100%;
   padding: 0.95rem;
   border-top: none;
   border-left: 0;
@@ -156,13 +157,14 @@ ul {
   background: #eee;
   max-width: 100%;
   margin: 0 auto;
-  height: 50rem;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 .hero-slider .slide {
   position: absolute;
+  max-width: 100%;
   width: 100%;
   height: 100%;
   clip-path: circle(0% at 0 50%);
@@ -175,6 +177,8 @@ ul {
 
 .hero-slider .slide img {
   position: absolute;
+  object-fit: cover;
+  max-width: 100%;
   width: 100%;
   height: 100%;
 }
@@ -858,13 +862,13 @@ ul {
 
 /* Media Queries */
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
   .header .main-header .main-header-item form .form-control input {
-    width: 65rem;
+    width: 60rem;
   }
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .hero-slider {
     height: 40rem;
   }
@@ -872,9 +876,9 @@ ul {
   .hero-slider .navigation {
     height: 40rem;
   }
-}
+} */
 
-@media (max-width: 1150px) {
+@media (max-width: 1070px) {
   .header .main-nav {
     display: none;
   }
@@ -898,13 +902,13 @@ ul {
 }
 
 @media (max-width: 1000px) {
-  .hero-slider {
+  /* .hero-slider {
     height: 38rem;
   }
 
   .hero-slider .navigation {
     height: 38rem;
-  }
+  } */
 
   .award-winner-store .award-winner-store-flex .award-winner-store-item img {
     width: 35rem;
@@ -923,9 +927,12 @@ ul {
 }
 
 @media (max-width: 850px) {
-  .mobile-menu {
-    display: block;
-    background-color: #fff;
+  .hero-slider {
+    height: 32rem;
+  }
+
+  .hero-slider .navigation {
+    height: 32rem;
   }
 }
 
@@ -956,7 +963,7 @@ ul {
 
 @media (max-width: 680px) {
   .hero-slider {
-    height: 28rem;
+    height: 32rem;
   }
 
   .footer .footer-flex {
@@ -965,7 +972,7 @@ ul {
   }
 
   .hero-slider .navigation {
-    height: 28rem;
+    height: 32rem;
   }
 }
 
@@ -1016,15 +1023,5 @@ ul {
   .award-winner-store .award-winner-store-flex .award-winner-store-item.card {
     width: 95%;
     margin: 2.5rem auto;
-  }
-}
-
-@media (max-width: 470px) {
-  .hero-slider {
-    height: 18.5rem;
-  }
-
-  .hero-slider .navigation {
-    height: 20rem;
   }
 }
